@@ -1,0 +1,12 @@
+<div class="col-sm-4">
+  <h3><%= link_to product.name, product_path(product) %></h3>
+   <%= image_tag(product.image_url, class:"img-fluid") unless product.image_url.nil? %>
+    <p><%= product.description %></p>
+    <p><%= product.colour %></p>
+    
+    <p><%= product.id %></p>
+    <p><%= link_to 'Show', product %></p>
+    <p><%= link_to 'Edit', edit_product_path(product) %></p>
+    <p><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+   </p>
+ </div>

@@ -1,0 +1,64 @@
+// Place all the styles related to the simple_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+* { box-sizing: border-box;}
+
+body {
+  position: relative;
+}
+
+h1 {
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  color: #001400;
+  text-align: center;
+}
+
+.my-image {
+  width: 100%;
+}
+/*navbar*/
+nav {
+  width: 100%;
+}
+.bg-gold {
+  height: 60px;
+  background-color: gold;
+}
+
+ul, li {
+  padding-right: 5px;
+  list-style: none;
+}
+/*footer*/
+* {
+    margin: 0;
+}
+p {
+  padding: 1px;
+}
+
+h1 {
+  padding: 15px;
+}
+h2 {
+  padding: 15px;
+}
+
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+    margin-bottom: 100px;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  /* .push must be the same height as footer */
+    height: 100px;
+}
+.site-footer {
+  background: orange;
+  text-align: center;
+}
