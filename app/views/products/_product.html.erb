@@ -3,7 +3,7 @@
    <%= image_tag(product.image_url, class:"img-fluid") unless product.image_url.nil? %>
     <p><%= product.description %></p>
     <p><%= product.colour %></p>
-    
+    <P><%= product.price %></p>
     <p><%= product.id %></p>
     <p><%= link_to 'Show', product %></p>
     <p><%= link_to 'Edit', edit_product_path(product) %></p>
