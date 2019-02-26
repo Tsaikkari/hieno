@@ -28,15 +28,19 @@ nav {
 ul, li {
   padding-right: 5px;
   list-style: none;
-  padding-top: 9px;
+  padding-top: 13px;
 }
 
+li.nav-item {
+  padding-bottom: 5px;
+}
+
+/*contact page*/
 .contact-info {
   padding: 30px;
   border: dotted gray 2px;
 }
 
-/*contact page*/
 .form_label {
   background-color: orange;
   border: solid gold 7px;
@@ -53,6 +57,11 @@ ul, li {
 .form_label:hover {
   color: #fff;
   background-color: #F36920;
+}
+
+#contact {
+  border: solid grey 1px;
+  padding: 20px;
 }
 
 /*footer*/
