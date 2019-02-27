@@ -11,6 +11,14 @@
   </head>
 
   <body>
+    <% if notice %>
+    <p id="notice" class="alert alert-primary"><%= notice %></p>
+    This is a notice info.
+    <% end %>
+    <% if alert %>
+    <p id="alert" class="alert alert-primary"><%= notice %></p>
+    This is an alert info.
+    <% end %>
     <nav class="navbar navbar-expand-md navbar-dark bg-gold" id="navbar">
       <li><%= link_to "Bike Berlin", root_path %></li>
      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
