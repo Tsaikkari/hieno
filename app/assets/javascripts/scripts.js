@@ -1,1 +1,2 @@
-$(".alert" ).delay(100).fadeOut(200);
+
+$().alert('close').delay(100).fadeOut(200);

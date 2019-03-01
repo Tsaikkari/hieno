@@ -1,9 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
+<h3>
+  <strong></strong>
   <%= @product.name %>
-</p>
+</h3>
+
+
+<%= image_tag products_path,{:method=>'get', class:"img-fluid" } do | image | %>
+<% end %>
 
 <p>
   <strong>Description:</strong>
@@ -25,5 +29,8 @@
   <%= @product.price %>
 </p>
 
+
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
+<%= @product.highest_rating_comment %>
+<%= @product.lowest_rating_comment %>
