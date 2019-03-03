@@ -6,7 +6,7 @@
 </h3>
 
 
-<%= image_tag(@product.image_url, class: "img-fluid") unless product.image_url.nil? %>
+<%= image_tag(@product.image_url, class: "img-fluid") unless @product.image_url.nil? %>
 <% end %>
 
 <p>
