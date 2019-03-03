@@ -22,5 +22,17 @@
 
 #login, #signup {
   border: solid grey 1px;
-  padding: 30px;
+  padding: 30px;;
+}
+
+.login {
+  text-align: center;
+}
+
+#login-button {
+  padding-left: 45px;
+}
+
+#remember {
+  padding-left: 30px;
 }
