@@ -2,11 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.form-label {
+.form-label-login {
   background-color: orange;
-  border: solid black 1px;
+  border: solid black 2px;
   color: #000;
-  padding: 12px 30px;
+  padding: 12px 60px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -14,21 +14,49 @@
   margin: 2px 2px;
 }
 
-.form-label:hover {
+.form-label-login:hover {
   color: #fff;
   background-color: #F36920;
-  border: solid black 1px;
+  border: solid black 2px;
 }
 
-#login, #signup {
+.form-label-reset, .form-label-sign-up {
+  background-color: orange;
+  border: solid black 2px;
+  color: #000;
+  padding: 12px 140px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+}
+
+.form-label-reset:hover {
+  color: #fff;
+  background-color: #F36920;
+  border: solid black 2px;
+}
+
+.form-label-sign-up:hover {
+  color: #fff;
+  background-color: #F36920;
+  border: solid black 2px;
+}
+
+ #signup, #forget {
   border: solid grey 1px;
   padding: 30px;;
 }
 
-.login {
+.login, .forgot, .actions, .sign-up {
   text-align: center;
 }
 
 #remember {
-  padding-left: 5%;
+  padding-left: 8%;
+}
+
+.sign_up {
+
 }
