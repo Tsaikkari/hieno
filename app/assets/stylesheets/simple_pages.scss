@@ -5,16 +5,35 @@
 
 body {
   position: relative;
+  background-color: lightyellow;
+}
+
+* {
+    margin: 0;
+}
+p {
+  padding: 1px;
 }
 
 h1 {
-  font-family: Futura, Helvetica, Arial, sans-serif;
-  color: #001400;
+  font-family: 'Permanent Marker', cursive;
+  color: #000;
   text-align: center;
+  text-transform: uppercase;
+  font-size: 4em;
+  font-weight: bold;
+  padding: 5px;
 }
 
+h2 {
+  font-family: 'Gloria Hallelujah', cursive;
+  text-shadow: 2px 2px #000;
+  text-align: center;
+  padding: 5px;
+}
 .about {
   font-size: 1.5em;
+  color: #000;
 }
 
 .my-image {
@@ -26,7 +45,8 @@ nav {
 }
 .bg-gold {
   height: 60px;
-  background-color: gold;
+  background-color: lightyellow;
+  border-bottom: dotted black 2px;
 }
 
 ul, li {
@@ -69,20 +89,6 @@ ul, li {
 }
 
 /*footer*/
-* {
-    margin: 0;
-}
-p {
-  padding: 1px;
-}
-
-h1 {
-  padding: 15px;
-}
-h2 {
-  padding: 15px;
-}
-
 
 .page-wrap {
   min-height: 100%;
