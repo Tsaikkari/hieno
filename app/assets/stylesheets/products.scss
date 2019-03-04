@@ -12,9 +12,18 @@
 }
 
 #products-row {
-  border: 8px solid #F36920;
+  border: 8px solid #000;
 }
 
 #single-product {
-  border: 8px solid #F36920;
+  background-color: #E9BF56;
+  border: 1px dotted #000;
+}
+
+.name {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.text {
+  font-family: 'Gloria Hallelujah', cursive;
 }

@@ -7,10 +7,10 @@
     <% @products.each do |product| %>
     <div class="col-sm-4" id="single-product">
       <%= image_tag(product.image_url, class: "img-fluid") unless product.image_url.nil? %>
-      <h3><%= link_to product.name, product %></h3>
-        <p><%= product.description %></p>
-        <p><%= product.colour %></p>
-        <p><%= product.price %></p>
+      <h3 class="name"><%= link_to product.name, product %></h3>
+        <p class="text"><%= product.description %></p>
+        <p class="text"><%= product.colour %></p>
+        <p class="text"><%= product.price %></p>
     </div>
     <% end %>
   </div>
