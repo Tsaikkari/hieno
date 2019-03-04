@@ -1,13 +1,9 @@
 <h2 class="login">Please log in</h2>
 
-<%= flash[:notice] %>
-
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 
   <div class="row">
-    <div class="col-sm-4">
-    </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 offset-sm-4">
       <div class="form-group">
         <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: "Enter Email" %>
      </div>
@@ -16,33 +12,28 @@
         <%= f.password_field :password, autocomplete: "current-password", class: "form-control", placeholder: "Password" %>
       </div>
     </div>
-    <div class="col-sm-4">
-    </div>
   </div>
 
   <% if devise_mapping.rememberable? %>
   <div class="row">
-    <div class="col-sm-4">
-    </div>
-    <div class="col-sm-2" id="login-button">
-        <div class="actions">
-        <%= f.submit "Log in", class: "form-label" %>
-       </div>
+    <div class="col-sm-2 offset-sm-4" id="login-button">
+      <div class="actions">
+        <%= f.submit "Log in", class: "form-label-login" %>
+      </div>
       <% end %>
     </div>
+
     <div class="col-sm-2" id="remember">
       <div class="form-group">
         <%= f.check_box :remember_me %>
         <%= f.label :remember_me %>
       </div>
-  <% end %>
+    <% end %>
     </div>
   </div>
-    <div class="col-sm-4">
-    </div>
+  <div class="row">
+   <div class="col-sm-4 offset-sm-4">
+    <%= render "devise/shared/links" %>
+   </div>
   </div>
-
-
-
-
-<%= render "devise/shared/links" %>
+</div>

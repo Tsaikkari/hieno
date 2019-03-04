@@ -8,21 +8,21 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
   </head>
 
   <body>
     <% if notice %>
     <p id="notice" class="alert alert-primary"><%= notice %></p>
-    This is a notice info.
     <% end %>
     <% if alert %>
     <p id="alert" class="alert alert-primary"><%= notice %></p>
-    This is an alert info.
     <% end %>
     <nav class="navbar navbar-expand-md navbar-dark bg-gold" id="navbar">
-      <li><%= link_to "Bike Berlin", root_path %></li>
+      <li><%= link_to "Bike Berlin", root_path, class: "company" %></li>
      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"></span>
      </button>
@@ -49,13 +49,13 @@
          <li class="nav-item"></li>
            <li><%= link_to "Orders", orders_path %></li>
        </ul>
-       <%=form_tag products_path,{:method=>'get', class:"form-inline my-2 my-lg-0", role:"search"}  do%>
-         <div class="form-group">
-          <%=text_field_tag :search,"",class:"form-control",placeholder:"Search"%>
-         </div>
-        <%=submit_tag 'Search' ,class:"btn btn-default "%>
-      <%end%>
-     </div>
+
+        <%= form_with(url: products_path, method: 'get', local: true, class: "form-inline") do |form| %>
+        <%= form.text_field :q, id: 'q', value: params[:q], class: "form-control mr-sm-2" %>
+        <%= form.submit 'Search', class: 'btn btn-default' %>
+        <% end %>
+      </div>
+
     </nav>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>

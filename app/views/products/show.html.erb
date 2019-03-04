@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="row">
   <div class="col-sm-4">
   <h3>
@@ -27,3 +28,23 @@
     <%= @product.lowest_rating_comment %>
   </div>
 </div>
+=======
+<h3>
+<strong></strong>
+<%= @product.name %>
+</h3>
+<%= image_tag(@product.image_url, class: "img-fluid") unless @product.image_url.nil? %>
+
+<p>
+<strong>Colour:</strong>
+<%= @product.colour %>
+</p>
+
+<p>
+<strong>Price:</strong>
+<%= @product.price %>
+</p>
+
+<%= @product.highest_rating_comment %>
+<%= @product.lowest_rating_comment %>
+>>>>>>> master

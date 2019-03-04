@@ -1,2 +1,3 @@
-
-$().alert('close').delay(100).fadeOut(200);
+$(document).on('turbolinks:load', function(){
+  $(".alert").delay(4000).fadeOut("ease");
+});
