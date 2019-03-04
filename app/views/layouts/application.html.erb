@@ -48,13 +48,13 @@
          <li class="nav-item"></li>
            <li><%= link_to "Orders", orders_path %></li>
        </ul>
-       <%=form_tag products_path,{:method=>'get', class:"form-inline my-2 my-lg-0", role:"search"}  do%>
-         <div class="form-group">
-          <%=text_field_tag :search,"",class:"form-control",placeholder:"Search"%>
-         </div>
-        <%=submit_tag 'Search' ,class:"btn btn-default "%>
-      <%end%>
-     </div>
+
+        <%= form_with(url: products_path, method: 'get', local: true, class: "form-inline") do |form| %>
+        <%= form.text_field :q, id: 'q', value: params[:q], class: "form-control mr-sm-2" %>
+        <%= form.submit 'Search', class: 'btn btn-default' %>
+        <% end %>
+      </div>
+
     </nav>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
