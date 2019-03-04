@@ -1,23 +1,29 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="col-sm-4">
+  <h3>
+    <strong></strong>
+    <%= @product.name %>
+  </h3>
+<%= image_tag(@product.image_url, class: "img-fluid") unless @product.image_url.nil? %>
+ </div>
 
-<h3>
-  <strong></strong>
-  <%= @product.name %>
-</h3>
+ <div class="col-sm-4">
+  <i class="fas fa-bicycle"></i>
+  <p>
+    <strong>Colour:</strong>
+    <%= @product.colour %>
+  </p>
 
+  <p>
+    <strong>Price:</strong>
+    <%= @product.price %>
+  </p>
+ </div>
+</div>
 
-<%= image_tag products_path,{:method=>'get', class:"img-fluid" } do | image | %>
-<% end %>
-
-<p>
-  <strong>Colour:</strong>
-  <%= @product.colour %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @product.price %>
-</p>
-
-<%= @product.highest_rating_comment %>
-<%= @product.lowest_rating_comment %>
+<div class="row">
+  <div class="col-sm-4">
+    <%= @product.highest_rating_comment %>
+    <%= @product.lowest_rating_comment %>
+  </div>
+</div>
