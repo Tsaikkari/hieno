@@ -18,11 +18,14 @@
     <strong>Price:</strong>
     <%= @product.price %>
   </p>
- </div>
+
+  <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div>
+  </p>
+</div>
 
  <div class="col-sm-6">
    <h2 class="gift">Free bike service within the first 4 months after purchase.</h2>
-</div>
+ </div>
 </div>
 
 <div class="row">
@@ -31,3 +34,5 @@
     <%= @product.lowest_rating_comment %>
   </div>
 </div>
+<%= render 'new_comment' %>
+<%= render 'comments' %>
