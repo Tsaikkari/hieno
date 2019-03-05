@@ -1,25 +1,28 @@
-<<<<<<< HEAD
 <div class="row">
   <div class="col-sm-4">
-  <h3>
+  <h3 class="show-name">
     <strong></strong>
     <%= @product.name %>
   </h3>
 <%= image_tag(@product.image_url, class: "img-fluid") unless @product.image_url.nil? %>
  </div>
 
- <div class="col-sm-4">
+ <div class="col-sm-2">
   <i class="fas fa-bicycle"></i>
-  <p>
+  <p class="color">
     <strong>Colour:</strong>
     <%= @product.colour %>
   </p>
 
-  <p>
+  <p class="price">
     <strong>Price:</strong>
     <%= @product.price %>
   </p>
  </div>
+
+ <div class="col-sm-6">
+   <h2 class="gift">Free bike service within the first 4 months after purchase.</h2>
+</div>
 </div>
 
 <div class="row">
@@ -28,23 +31,3 @@
     <%= @product.lowest_rating_comment %>
   </div>
 </div>
-=======
-<h3>
-<strong></strong>
-<%= @product.name %>
-</h3>
-<%= image_tag(@product.image_url, class: "img-fluid") unless @product.image_url.nil? %>
-
-<p>
-<strong>Colour:</strong>
-<%= @product.colour %>
-</p>
-
-<p>
-<strong>Price:</strong>
-<%= @product.price %>
-</p>
-
-<%= @product.highest_rating_comment %>
-<%= @product.lowest_rating_comment %>
->>>>>>> master

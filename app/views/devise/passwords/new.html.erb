@@ -3,18 +3,25 @@
 <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
+  <div class="container">
     <div class="row">
-      <div class="col-sm-4 offset-sm-4" id="forget">
+      <div class="col-xs-12 col-sm-4 offset-sm-4" id="forget">
         <div class="form-group">
           <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: "Enter Email" %>
         </div>
+      </div>
+    </div>
 
-        <div class="actions">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 offset-sm-4">
+        <div class="form-group">
           <%= f.label :reset_password %>
           <%= f.submit "Send", class: "form-label-reset" %>
         </div>
         <%= render "devise/shared/links" %>
       </div>
     </div>
+  </div>
+
 
   <% end %>
