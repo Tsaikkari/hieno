@@ -36,5 +36,7 @@
     <% end %>
   </div>
 </div>
+
 <%= render 'new_comment' %>
-<%= render 'comments' %>
+<%= render 'comments' %><br>
+<%= will_paginate @comments %>

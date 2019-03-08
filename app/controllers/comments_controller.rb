@@ -1,10 +1,5 @@
 class CommentsController < ApplicationController
 
-  def show
-    @comments = Comments.paginate(:page => params[:page], :per_page => 2)
-  end
-
-
   def create
     @product = Product.find(params[:product_id])
     @comment = @product.comments.new(comment_params)
