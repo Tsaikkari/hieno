@@ -1,5 +1,10 @@
 class CommentsController < ApplicationController
 
+  def show
+    @comments = Comments.paginate(:page => params[:page], :per_page => 2)
+  end
+
+
   def create
     @product = Product.find(params[:product_id])
     @comment = @product.comments.new(comment_params)
@@ -14,11 +19,6 @@ class CommentsController < ApplicationController
         format.json { render json: @comment.errors, status: :unprocessable_entity }
       end
     end
-  end
-
-  def show
-    @comments = @product.comments(comment_params)
-    @comments = Comments.paginate(:page => params[:page], :per_page => 2)
   end
 
   def destroy

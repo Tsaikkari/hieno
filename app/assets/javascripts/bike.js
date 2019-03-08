@@ -1,9 +1,9 @@
 var pos = 0;
-var bike = document.getElemnetById("bike");
+var bike = document.getElementById("bike");
 var t = setInterval(move, 10);
 
 function move() {
-  if(pos >= 62.5) {
+  if (pos >= 62.5) {
     clearInterval(t);
   }
   else {
