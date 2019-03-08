@@ -1,13 +1,13 @@
-<div class="row">
-  <div class="col-sm-4">
-  <h3 class="show-name">
+<h3 class="show-name">
     <strong></strong>
     <%= @product.name %>
   </h3>
-<%= image_tag(@product.image_url, class: "img-fluid") unless @product.image_url.nil? %>
+<div class="row">
+  <div class="col-sm-4">
+    <%= image_tag(@product.image_url, class: "img-fluid") unless @product.image_url.nil? %>
  </div>
 
- <div class="col-sm-2">
+ <div class="col-sm-2 properties">
   <i class="fas fa-bicycle"></i>
   <p class="color">
     <strong>Colour:</strong>
@@ -19,7 +19,7 @@
     <%= @product.price %>
   </p>
 
-  <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div>
+  <p class="avg-rating">Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div>
   </p>
 </div>
 
@@ -30,8 +30,10 @@
 
 <div class="row">
   <div class="col-sm-4">
+    <% if @product.comments.length > 0 %>
     <%= @product.highest_rating_comment.body %><br>
     <%= @product.lowest_rating_comment.body %>
+    <% end %>
   </div>
 </div>
 <%= render 'new_comment' %>

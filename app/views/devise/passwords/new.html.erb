@@ -11,10 +11,8 @@
 
         <div class="actions">
           <%= f.label :reset_password %>
-          <%= f.submit "Send", class: "form-label-reset" %>
+          <%= f.submit "Send", class: "btn btn-warning new-password" %><%= render "devise/shared/links" %>
         </div>
-        <%= render "devise/shared/links" %>
       </div>
     </div>
-
   <% end %>
