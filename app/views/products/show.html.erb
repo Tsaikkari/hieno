@@ -28,14 +28,12 @@
  </div>
 </div>
 
-<div class="row">
-  <div class="col-sm-4">
+
     <% if @product.comments.length > 0 %>
     <%= @product.highest_rating_comment.body %><br>
     <%= @product.lowest_rating_comment.body %>
     <% end %>
-  </div>
-</div>
+
 
 <%= render 'new_comment' %>
 <%= render 'comments' %><br>
