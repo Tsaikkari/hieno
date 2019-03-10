@@ -1,4 +1,5 @@
 class CommentsController < ApplicationController
+  load_and_authorize_resource :only => :destroy
 
   def create
     @product = Product.find(params[:product_id])

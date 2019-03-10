@@ -28,12 +28,10 @@
  </div>
 </div>
 
-
-    <% if @product.comments.length > 0 %>
-    <%= @product.highest_rating_comment.body %><br>
-    <%= @product.lowest_rating_comment.body %>
-    <% end %>
-
+<% if @product.comments.length > 0 %>
+<%= @product.highest_rating_comment.body %><br>
+<%= @product.lowest_rating_comment.body %>
+<% end %>
 
 <%= render 'new_comment' %>
 <%= render 'comments' %><br>
