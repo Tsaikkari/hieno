@@ -4,8 +4,8 @@
   <div class="row" id="users-row">
     <% @users.each do |user| %>
     <div class="col-xs-12 col-sm-6 col-md-4" id="users">
-      <p class="first-name"><strong>First name:</strong><%= link_to user.first_name, user %></p>
-      <p class="first-name"><strong>Last name:</strong><%= link_to user.last_name, user %></p>
+      <p class="first-name"><strong>First name: </strong><%= link_to user.first_name, user %></p>
+      <p class="first-name"><strong>Last name: </strong><%= link_to user.last_name, user %></p>
       <p><%= link_to 'Show', user %></p>
       <p><%= link_to 'Edit', edit_user_path(user) %></p>
       <p><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></p>
