@@ -1,0 +1,10 @@
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <h3><%= link_to user.name, user_path(user) %></h3>
+   <p><%= user.first_name %></p>
+   <p><%= user.last_name %></p>
+   <p><%= link_to 'Show', user %></p>
+   <p><%= link_to 'Edit', edit_user_path(user) %></p>
+   <p><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+</div>
+
+<%= link_to 'New User', new_user_path %>

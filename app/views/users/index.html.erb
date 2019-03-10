@@ -1,27 +1,15 @@
-<h1>Users</h1>
+<h2>Users</h2>
 
-<table>
-  <thead>
-    <tr>
-      <th>First name</th>
-      <th>Last name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
+<div class="container" id="user_list">
+  <div class="row" id="users-row">
     <% @users.each do |user| %>
-      <tr>
-        <td><%= user.first_name %></td>
-        <td><%= user.last_name %></td>
-        <td><%= link_to 'Show', user %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+    <div class="col-xs-12 col-sm-6 col-md-4" id="users">
+      <p class="first-name"><strong>First name:</strong><%= link_to user.first_name, user %></p>
+      <p class="first-name"><strong>Last name:</strong><%= link_to user.last_name, user %></p>
+      <p><%= link_to 'Show', user %></p>
+      <p><%= link_to 'Edit', edit_user_path(user) %></p>
+      <p><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+    </div>
     <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New User', new_user_path %>
+  </div>
+</div>
