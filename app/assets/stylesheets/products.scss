@@ -11,14 +11,17 @@
   width: 350px;
   height: 250px;
   border: 1px solid #000;
+  border-radius: 10px;
 }
 
 #products {
-  padding: 1%;
+  padding-bottom: 40px;
 }
 
 .name {
   font-family: 'Permanent Marker', cursive;
+  padding-top: 15px;
+  text-decoration: underline;
 }
 
 .text {
