@@ -38,8 +38,9 @@
   padding: 30px;;
 }
 
-.login, .forgot, .actions, .sign-up {
+ .forgot, .actions, .sign-up, .login {
   text-align: center;
+  padding-top: 60px;
 }
 
 .btn:hover {
@@ -47,15 +48,19 @@
 }
 
 .log-in {
-  padding-left: 55%;
-  padding-right: 61%;
+  padding-left: 60%;
+  padding-right: 55%;
 }
 
 #remember {
   padding-left: 8%;
 }
 
-// show page
+.div.field, .actions {
+  padding-top: 0;
+}
+
+/* show page */
 
 #users-row {
   padding: 2%;

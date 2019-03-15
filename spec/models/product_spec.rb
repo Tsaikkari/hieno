@@ -1,9 +1,8 @@
-require 'rails-helper'
-require 'spec-helper'
+require 'rails_helper'
 
 describe Product do
   context "when the product has comments" do
-    let(:product) { Product.create!(name: "street bike") }
+    let(:product) { Product.create!(name: "race bike") }
     let(:user) { User.create!(password: "password", email: "email@gmx.de") }
 
     before do
