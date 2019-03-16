@@ -4,15 +4,19 @@
 
 
 .form-label-login:hover {
-  color: #fff;
+  /*color: #fff;
   background-color: #F36920;
-  border: solid black 2px;
+  border: solid black 2px;*/ 
+  color: orange;
+  background-color: chocolate;
+
+  
 }
 
 .form-label-reset, .form-label-sign-up {
-  background-color: orange;
+  background-color: chocolate;
   border: solid black 2px;
-  color: #000;
+  color: #fff;
   padding: 12px 40px;
   text-align: center;
   text-decoration: none;
@@ -23,13 +27,13 @@
 
 .form-label-reset:hover {
   color: #fff;
-  background-color: #F36920;
+  background-color: chocolate;
   border: solid black 2px;
 }
 
 .form-label-sign-up:hover {
   color: #fff;
-  background-color: #F36920;
+  background-color: chocolate;
   border: solid black 2px;
 }
 
@@ -44,7 +48,7 @@
 }
 
 .btn:hover {
-  background-color: #F36920;
+  background-color: chocolate;
 }
 
 .log-in {
