@@ -75,6 +75,7 @@ nav {
 .navbar-nav {
   padding-top: 0;
   height: 30px;
+  text-transform: uppercase
 }
 
 .bg-gold {
@@ -88,12 +89,12 @@ nav {
   font-size: 1.5em;
   font-weight: bolder;
   font-family: 'Gloria Hallelujah', cursive;
+  text-transform: uppercase;
 }
 
 ul, li, a {
   padding: 10px;
   list-style: none;
-  text-transform: uppercase;
 }
 
 .btn-default {
