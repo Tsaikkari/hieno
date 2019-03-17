@@ -9,20 +9,6 @@
   border: solid black 2px;*/ 
   color: orange;
   background-color: chocolate;
-
-  
-}
-
-.form-label-reset, .form-label-sign-up {
-  background-color: chocolate;
-  border: solid black 2px;
-  color: #fff;
-  padding: 12px 40px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 2px 2px;
 }
 
 .form-label-reset:hover {
@@ -51,16 +37,23 @@
   background-color: chocolate;
 }
 
+.btn-light {
+  border: 1px solid lightgrey;
+  background-color: darkgoldenrod;
+}
+
 .log-in {
   padding-left: 60%;
   padding-right: 55%;
 }
 
 #remember {
+  color: chocolate;
   padding-left: 8%;
 }
 
 .div.field, .actions {
+  color: chocolate;
   padding-top: 0;
 }
 
