@@ -1,5 +1,6 @@
 body {
-  color: orange;
+  //color: #4D99BE;
+  color: teal;
   margin: 0px;
   padding: 0px;
   font-family: verdana, arial, helvetica, sans-serif;
@@ -31,7 +32,8 @@ a {
 
   &:hover {
     color: #fff;
-    background-color: chocolate;
+    //background-color: #63CFD9;
+    background-color: gold;
     text-decoration: none;
   }
 }
