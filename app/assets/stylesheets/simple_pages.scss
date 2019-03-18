@@ -1,6 +1,5 @@
-// Place all the styles related to the simple_pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
 * { box-sizing: border-box;}
 
 body {
@@ -26,8 +25,8 @@ p {
 h1 {
   /*font-family: 'Permanent Marker', cursive;*/
   font-family: 'Lato', sans-serif;
-  color: #FFF;
-  text-align: left;
+  color: #000;
+  text-align: center;
   text-transform: uppercase;
   font-size: 4em;
   font-weight: 600;
@@ -41,6 +40,11 @@ h2 {
   text-shadow: #000 1px 1px;
   padding: 7px;
   padding-bottom: 10px;
+}
+
+.welcome-header {
+  color: #FFF;
+  text-align: left;
 }
 
 .welcome, .carousel, .contact {
