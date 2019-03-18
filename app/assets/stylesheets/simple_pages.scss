@@ -6,11 +6,19 @@
 body {
   position: relative;
   background-color: lightyellow;
+  max-width: 100%;
 }
 
 * {
     margin: 0;
 }
+
+#welcoming {
+  background: url('peugeot.jpg') no-repeat center center;
+  background-size: cover;  /* For a full size background image */
+  height: 1000px;
+}
+
 p {
   padding: 1px;
 }
@@ -18,8 +26,8 @@ p {
 h1 {
   /*font-family: 'Permanent Marker', cursive;*/
   font-family: 'Lato', sans-serif;
-  color: #000;
-  text-align: center;
+  color: #FFF;
+  text-align: left;
   text-transform: uppercase;
   font-size: 4em;
   font-weight: 600;
@@ -38,6 +46,11 @@ h2 {
 .welcome, .carousel, .contact {
   font-family: 'Sniglet', cursive;
 }
+
+.welcome {
+  text-align: right;
+}
+
 .about-header, .products { /* headers */
   font-family: 'Lato', sans-serif;
 }
@@ -63,7 +76,7 @@ h2 {
 
 #bike {
   font-size: 50px;
-  color: black;
+  color: #FFF;
   //text-shadow: 1px 1px gold;
   padding-bottom: 0;
   position: absolute;
@@ -158,12 +171,13 @@ ul, li, a {
 .page-wrap {
   min-height: 100%;
   /* equal to footer height */
-    margin-bottom: 100px;
+     margin-bottom: 100px;
 }
 .page-wrap:after {
   content: "";
   display: block;
 }
+
 .site-footer, .page-wrap:after {
   /* .push must be the same height as footer */
     height: 100px;
