@@ -12,10 +12,10 @@ body {
     margin: 0;
 }
 
-#welcoming {
+.whole-page {
   background:url('peugeot.jpg') no-repeat center center;
   background-size: cover;  /* For a full size background image */
-  height: 1000px;
+  height: 1300px;
 }
 
 p {
@@ -108,13 +108,6 @@ nav {
   padding-top: 0;
   height: 30px;
   text-transform: uppercase
-}
-
-.bg-gold {
-  padding-top: 0;
-  padding-bottom: 10px;
-  background-color: lightyellow;
-  border-bottom: dotted black 1px;
 }
 
 .company {
