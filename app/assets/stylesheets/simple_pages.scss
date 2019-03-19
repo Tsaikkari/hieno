@@ -45,6 +45,8 @@ h2 {
 .welcome-header {
   color: #FFF;
   text-align: left;
+  padding-top: 3%;
+  padding-left: 0;
 }
 
 .welcome, .carousel, .contact {
@@ -108,6 +110,10 @@ nav {
   padding-top: 0;
   height: 30px;
   text-transform: uppercase
+}
+
+.bg {
+  background-color: #18272F;
 }
 
 .company {
