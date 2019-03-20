@@ -13,10 +13,14 @@ body {
 }
 
 .whole-page {
-  background:url('peugeot.jpg') no-repeat center center;
-  background-size: cover;  /* For a full size background image */
   height: 1300px;
 }
+
+.home-page {
+  background:url('peugeot.jpg') no-repeat center center;
+  background-size: cover;  /* For a full size background image */
+}
+
 
 p {
   padding: 1px;

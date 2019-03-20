@@ -1,6 +1,7 @@
 class SimplePagesController < ApplicationController
   def index
     @products = Product.limit(9)
+    @homepage = true
   end
 
   def landing_page

@@ -18,7 +18,7 @@
   </head>
 
   <body>
-  <div class="whole-page">
+  <div class="whole-page <%= @homepage ? 'home-page' : '' %>">
     <% if notice %>
     <p id="notice" class="alert alert-primary"><%= notice %></p>
     <% end %>
