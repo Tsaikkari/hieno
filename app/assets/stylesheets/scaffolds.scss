@@ -11,7 +11,7 @@ p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
-  color: #000;
+  color: #fff;
 }
 
 pre {
@@ -21,11 +21,11 @@ pre {
 }
 
 a {
-  color: #000;
+  color: #fff;
   text-decoration: none;
 
   &:visited {
-    color: #666;
+    color: lightgrey;
     text-decoration: none;
   }
 

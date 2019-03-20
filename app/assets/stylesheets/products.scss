@@ -23,10 +23,10 @@
 
 .name {
   font-family: 'Lato-thin', sans-serif;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-left: 0;
-  background-color: blanchedalmond;
+  background-color: #18272F;
   text-align: center;
   border-radius: 10px;
 }
@@ -34,6 +34,7 @@
 .text {
   font-family: 'Lato', sans-serif;
   padding-left: 4%;
+  color: "fff;"
 }
 
 /*product_show*/
@@ -49,7 +50,7 @@
 
 .gift {
   text-transform: uppercase;
-  color: red;
+  color: gold;
   text-shadow: 2px 2px #fff;
   padding-right: 17%;
   padding-top: 5%;
@@ -67,6 +68,6 @@
 
 // pagination
 .pagination {
-  color: #000;
+  color: #fff;
   text-transform: uppercase;
 }
