@@ -10,7 +10,7 @@ describe UsersController, type: :controller do
   describe 'GET #show' do
     context 'when a user is logged in' do
       before do
-        sign_in @user
+        sign_in @user1
       end
 
       it "loads correct user details" do
