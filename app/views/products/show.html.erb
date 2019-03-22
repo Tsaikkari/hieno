@@ -5,10 +5,6 @@
 <div class="row">
   <div class="col-sm-4">
     <%= image_tag(@product.image_url, class: "img-fluid") unless @product.image_url.nil? %><br>
-    <br>
-    <%= link_to "Back", :back, class: "btn btn-light" %>
-    <%= link_to "Previous", @product.previous, class: "btn btn-light" %>
-    <%= link_to "Next", @product.next, class: "btn btn-light" %>
   </div><br>
 
   <div class="col-sm-3 properties">
@@ -30,8 +26,12 @@
      <% end %>
   </div>
  
-  <div class="col-sm-5">
+  <div class="col-sm-5" id="gift-links">
     <h2 class="gift">Free bike service within the first 4 months after purchase.</h2>
+    <br>
+    <%= link_to "Back", :back, class: "btn btn-light" %>
+    <%= link_to "Previous", @product.previous, class: "btn btn-light" %>
+    <%= link_to "Next", @product.next, class: "btn btn-light" %>
   </div>
 </div>
 
