@@ -5,8 +5,10 @@
 <div class="row">
   <div class="col-sm-4">
     <%= image_tag(@product.image_url, class: "img-fluid") unless @product.image_url.nil? %><br>
-
+    <br>
     <%= link_to "Back", :back, class: "btn btn-light" %>
+    <%= link_to "Previous", @product.previous, class: "btn btn-light" %>
+    <%= link_to "Next", @product.next, class: "btn btn-light" %>
   </div><br>
 
   <div class="col-sm-3 properties">

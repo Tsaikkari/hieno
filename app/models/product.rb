@@ -19,10 +19,24 @@ class Product < ApplicationRecord
   end
 
   def self.search(search_term)
-  if Rails.env.production?
-  Product.where("name ilike ?", "%#{search_term}%")
-  else
-  Product.where("name LIKE ?", "%#{search_term}%")
+    if Rails.env.production?
+    Product.where("name ilike ?", "%#{search_term}%")
+    else
+    Product.where("name LIKE ?", "%#{search_term}%")
+    end
+  end
+
+  scope :next, lambda {|id| where("id > ?",id).order("id ASC") } # this is the default ordering for AR
+  scope :previous, lambda {|id| where("id < ?",id).order("id DESC") }
+
+  def next
+    Product.next(self.id).first
+  end
+
+  def previous
+    Product.previous(self.id).first
   end
 end
-end
+
+
+
