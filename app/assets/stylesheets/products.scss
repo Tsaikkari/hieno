@@ -1,7 +1,3 @@
-.page-wrap {
-  margin-right: 7%;
-  margin-left: 7%;
-}
 
 .img-fluid {
   width: 350px;
@@ -9,20 +5,27 @@
   border-radius: 4px; 
 }
 
-#products {
+#products { /* field */
   padding-bottom: 40px; 
   background-color: #fff;  
 }
 
-.products {
+.product-block { /* img, name and description */
+  background-color: aliceblue;
+  //background-color: #EEE8AA;
+  padding: 0;
+  border-radius: 5px;
+  color: #225566;
+}
+
+.products { /* h1 header */
   padding-top: 15px;
   padding-bottom: 20px;
   margin-bottom: 0;
   font-weight: 600;
   letter-spacing: 0.2em;
-  color: #000;
-  background-color: red;
-  border: solid black 2px;
+  color: chocolate;
+  border: solid white 9px;
 }
 
 .name {
@@ -30,7 +33,8 @@
   padding-top: 7px;
   padding-bottom: 7px;
   margin-left: 0;
-  background-color: #dfffff;
+  background-color: #EEE685;
+  text-align: center;
 }
 
 .text {
@@ -39,30 +43,12 @@
   color: #000;
 }
 
-.product-block {
-  background-color: #dfffff;
-  padding: 0;
-  border-radius: 5px;
-  color: #225566;
-}
-
 /*product_show*/
-
 .properties {
   text-align: center;
   padding-top: 2%;
   border: solid 1px blue;
   background-color: white;
-}
-
-.fas {
-  padding-bottom: 5%;
-}
-
-.gift {
-  font-family: 'Sniglet', cursive;
-  padding: 20px;
-  color: orange;
 }
 
 .show-name {
@@ -71,11 +57,17 @@
   color: #000;
   padding-top: 3%;
   padding-bottom: 2%;
-  background-color: #FF4C4C;
-  border: solid 2px #000;
+  background-color: #FF4040;
+  border-radius: 5px;
 }
 
-// pagination
+.gift {
+  font-family: 'Sniglet', cursive;
+  padding: 20px;
+  color: orange;
+}
+
+/* pagination */
 .pagination {
   color: #000;
   text-transform: uppercase;

@@ -1,40 +1,16 @@
-// Place all the styles related to the users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-
-.form-label-login:hover {
-  /*color: #fff;
-  background-color: #F36920;
-  border: solid black 2px;*/ 
-  color: orange;
-  background-color: gold;
-}
-
-.form-label-reset:hover {
-  color: #fff;
-  background-color: gold;
-  border: solid black 2px;
-}
-
-.form-label-sign-up:hover {
-  color: #fff;
-  background-color: gold;
-  border: solid black 2px;
-}
-
- .forgot, .actions, .sign-up, .login {
+ /* devise */
+ .sign-up, .login, .forgot, .actions {
   text-align: center;
   padding-top: 90px;
-}
-
-.btn:hover {
-  background-color: lavender;
 }
 
 .btn-light {
   border: 1px solid lightgrey;
   background-color: blanchedalmond;
+}
+
+.btn:hover {
+  background-color: lavender;
 }
 
 .log-in {
@@ -52,13 +28,12 @@
   padding-top: 0;
 }
 
-/* show page */
-
+/* users page */
 #users-row {
   padding: 2%;
 }
 
 #users {
-  border: 2px dotted orange;
+  border: 2px solid orange;
   padding: 1%
 }
