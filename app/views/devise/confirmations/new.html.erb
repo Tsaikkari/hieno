@@ -5,12 +5,13 @@
   <div class="row">
     <div class="col-sm-4 offset-sm-4" id="confirmation">
       <div class="form-group">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control" value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %>
-     </div>
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control" 
+        value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %>
+      </div>
 
       <div class="actions">
-        <%= f.submit "Resend confirmation instructions", class: "btn btn-warning form-control" %>
+        <%= f.submit "Resend confirmation instructions", class: "btn btn-light form-control" %>
       </div>
     <% end %>
     <%= render "devise/shared/links" %>

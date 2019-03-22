@@ -11,13 +11,18 @@
 
 #products {
   padding-bottom: 40px; 
-  
+  background-color: #fff;  
 }
 
 .products {
   padding-top: 15px;
   padding-bottom: 20px;
-  font-weight: 100;
+  margin-bottom: 0;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: #000;
+  background-color: red;
+  border: solid black 2px;
 }
 
 .name {
@@ -38,6 +43,7 @@
   background-color: #dfffff;
   padding: 0;
   border-radius: 5px;
+  color: #225566;
 }
 
 /*product_show*/
@@ -45,6 +51,8 @@
 .properties {
   text-align: center;
   padding-top: 2%;
+  border: solid 1px blue;
+  background-color: white;
 }
 
 .fas {
@@ -52,12 +60,9 @@
 }
 
 .gift {
-  text-transform: uppercase;
-  color: white;
-  text-shadow: 2px 2px #fff;
-  padding-right: 17%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  font-family: 'Sniglet', cursive;
+  padding: 20px;
+  color: orange;
 }
 
 .show-name {
@@ -66,10 +71,12 @@
   color: #000;
   padding-top: 3%;
   padding-bottom: 2%;
+  background-color: #FF4C4C;
+  border: solid 2px #000;
 }
 
 // pagination
 .pagination {
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
 }
