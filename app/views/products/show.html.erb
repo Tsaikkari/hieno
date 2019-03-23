@@ -5,7 +5,7 @@
   </h3>
   <div class="row">
     <div class="col-sm-4">
-      <%= image_tag(@product.image_url, class: "img-fluid") unless @product.image_url.nil? %><br><br>
+      <%= image_tag(@product.image_url, class: "img-fluid img-zoom", data_zoom_image: "@product.product_image.url") unless @product.image_url.nil? %><br><br>
       <div class="show-buttons">
       <%= link_to "Back", :back, class: "btn btn-light" %>
       <%= link_to "Previous", @product.previous, class: "btn btn-light" %>
