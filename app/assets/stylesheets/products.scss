@@ -1,8 +1,12 @@
 
-.img-responsive {
+.img-fluid {
   width: auto;
   height: 300px;
   border-radius: 0px; 
+}
+
+.col-sm-4 {
+  padding-right: 0;
 }
 
 #products { /* field */
@@ -11,7 +15,7 @@
 
 .product-block { /* img, name and description */
   padding: 0;
-  border-radius: 5px;
+  border: solid 2px lightgray;
 }
 
 .products { /* h1 header */
@@ -31,10 +35,6 @@
   //background-color: #EEE685;
 }
 
-.text-block {
-  border: solid 2px lightgray;
-}
-
 .text {
   font-family: 'Lato', sans-serif;
   padding-left: 4%;
@@ -45,7 +45,8 @@
 .properties {
   text-align: center;
   padding-top: 4%;
-  padding-left: 8%;
+  border-bottom: solid 2px #000;
+  border-right: solid 2px #000;
 }
 
 .show-name {
@@ -60,13 +61,22 @@
 
 .gift {
   font-family: 'Sniglet', cursive;
-  padding: 20px;
+  padding-top: 50px;
   color: orange;
 }
 
-#gift-links {
+#gift-area {
   text-align: center;
-  background-color: darkgrey;
+  background-color: lightyellow;
+}
+
+.show-buttons {
+  text-align: center;
+  border-bottom: solid 2px #000;
+}
+
+.review {
+  padding-top: 20px;
 }
 
 /* pagination */

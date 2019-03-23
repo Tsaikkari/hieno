@@ -5,10 +5,15 @@
   </h3>
   <div class="row">
     <div class="col-sm-4">
-      <%= image_tag(@product.image_url, class: "img-responsive") unless @product.image_url.nil? %><br>
+      <%= image_tag(@product.image_url, class: "img-fluid") unless @product.image_url.nil? %><br><br>
+      <div class="show-buttons">
+      <%= link_to "Back", :back, class: "btn btn-light" %>
+      <%= link_to "Previous", @product.previous, class: "btn btn-light" %>
+      <%= link_to "Next", @product.next, class: "btn btn-light" %>
+      </div>
     </div>
 
-    <div class="col-sm-4 properties">
+    <div class="col-sm-2 properties">
       <p class="color">
         <strong>Colour:</strong>
         <%= @product.colour %>
@@ -27,12 +32,8 @@
       <% end %>
     </div>
   
-    <div class="col-sm-4" id="gift-links">
+    <div class="col-sm-6" id="gift-area">
       <h2 class="gift">Free bike service within the first 4 months after purchase.</h2>
-      <br>
-      <%= link_to "Back", :back, class: "btn btn-light" %>
-      <%= link_to "Previous", @product.previous, class: "btn btn-light" %>
-      <%= link_to "Next", @product.next, class: "btn btn-light" %>
     </div>
   </div>
 </div>
