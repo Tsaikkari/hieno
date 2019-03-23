@@ -2,11 +2,12 @@
 
   <%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
   <div class="row">
-    <div class="col-sm-8"
+    <div class="col-sm-7 offset-sm-1"
      <div class="form-group">
-     <%= image_tag("welcome.jpg", class: "img-responsive my-image") %>
+      <%= image_tag("welcome.jpg", class: "img-responsive my-image") %><br>
      </div>
-    <div class="col-sm-4" id="contact">
+    
+    <div class="col-sm-3" id="contact">
       <div class="form-group">
         <%= form.label :name %>
         <%= form.text_field :name, class: "form-control", placeholder: "Enter Name" %>
@@ -22,16 +23,11 @@
       <%= form.submit "Send", class: "btn btn-light" %>
       <% end %>
     </div>
-    <div class="container-content" id="contact-info">
-      <div class="row">
-        <div class="col">
-          <p><strong>Address: Prenzlauer Allee 45, 10405 Berlin<strong></p>
-          <p>Telephone: 030-25794556</p>
-          <p>We are open Mo - Fr at 9-18, Sa at 9-14.</p>
-        </div>
-      </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 offset-sm-1" id="contact-info">
+      <p><strong>Address: Prenzlauer Allee 45, 10405 Berlin<strong></p>
+      <p>Telephone: 030-25794556</p>
+      <p>We are open Mo - Fr at 9-18, Sa at 9-14.</p>
     </div>
   </div>
-
-  
-
