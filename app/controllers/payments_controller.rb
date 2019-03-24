@@ -16,11 +16,11 @@ class PaymentsController < ApplicationController
 
             if charge.paid
                 Order.create(
-                    product_id = @product.id,
-                    user_id = @user.id,
-                    total = @product.price
+                    product_id: @product.id,
+                    user_id: @user.id,
+                    total: @product.price
                 )
-                User.Mailer.order_placed(@user, @product).deliver_now
+                UserMailer.order_placed(@user, @product).deliver_now
             end 
 
         rescue Stripe::CardError => e 
