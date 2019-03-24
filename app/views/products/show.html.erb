@@ -3,6 +3,8 @@
       <strong></strong>
       <%= @product.name %>
   </h3>
+
+<div class="container-content">
   <div class="row">
     <div class="col-sm-4">
       <%= image_tag(@product.image_url, class: "img-fluid img-zoom", data_zoom_image: "@product.product_image.url") unless @product.image_url.nil? %><br><br>
@@ -37,7 +39,7 @@
       <h2 class="gift">Free bike service within the first 4 months after purchase.</h2>
     </div>
   </div>
-
+</div>
 <% if @product.comments.length > 0 %>
 <% end %> 
 <%= render 'new_comment' %>
