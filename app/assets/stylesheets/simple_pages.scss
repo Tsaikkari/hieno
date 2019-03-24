@@ -2,7 +2,6 @@
 
 body {
   position: relative;
-  //background-color:#1993;
   background-color: #fff;
   max-width: 100%;
 }
@@ -93,7 +92,7 @@ p {
   text-align: right;
 }
 
-.about-header { /* header */
+.about-header { 
   font-family: 'Lato', sans-serif;
   color: #000;
   padding-top: 20px; 
@@ -179,7 +178,6 @@ ul, li, a {
 
 #middle { /* section */
   background-color: #FFF;
-  border-radius: 5px;
   margin: 0;
   border-top: 15px solid #1993;
   border-bottom: 3px solid #1993;

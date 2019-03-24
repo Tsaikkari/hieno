@@ -5,6 +5,7 @@ class Product < ApplicationRecord
   validates :image_url, presence: true
   validates :colour, presence: true
   validates :price, presence: true
+  scope :created_desc, -> { order("created_at DESC") }
 
   def highest_rating_comment
     comments.rating_desc.first

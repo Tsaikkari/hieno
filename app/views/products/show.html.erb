@@ -4,8 +4,8 @@
       <%= @product.name %>
   </h3>
 
-  <div class="row">
-    <div class="col-sm-4">
+  <div class="row" id="show-row">
+    <div class="col-sm-4 offset-sm-3">
       <%= image_tag(@product.image_url, class: "img-fluid img-zoom", data_zoom_image: "@product.product_image.url") unless @product.image_url.nil? %><br><br>
       <div class="show-buttons">
       <%= link_to "Back", :back, class: "btn btn-light" %>
@@ -21,7 +21,7 @@
       </p>
 
       <p class="price">
-        <strong>Price:</strong>
+        <strong>Price: € </strong>
         <%= @product.price %>
       </p>
 
@@ -33,16 +33,12 @@
       <%= hidden_field_tag(:product_id, @product.id) %>
       <% end %>
     </div>
-  
-    <div class="col-sm-6" id="gift-area">
-      <h2 class="gift">Free bike service within the first 4 months after purchase.</h2>
-    </div>
   </div>
 </div>
 <% if @product.comments.length > 0 %>
 <% end %> 
 <%= render 'new_comment' %>
-<%= render 'comments' %><br>
+<%= render 'comments' %>
 <%= will_paginate @comments %>
 </div>
   
