@@ -2,7 +2,7 @@
   <div class="product-reviews">
     <% @comments.each do |comment| %>
         <div class="row">
-          <div class="col-sm-3 offset-sm-3">
+          <div class="col-sm-9 offset-sm-3">
             <hr>
             <p><%= comment.user.first_name %> <small><em><%= "#{time_ago_in_words(comment.created_at)} ago" %></em></small>
 
