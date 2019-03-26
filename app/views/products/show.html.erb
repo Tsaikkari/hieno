@@ -29,16 +29,15 @@
       </p>
 
       <%= form_with(url: '/payments/create') do |form| %>
-      <%= render partial: "shared/stripe_checkout_button" %>
-      <%= hidden_field_tag(:product_id, @product.id) %>
+        <%= render partial: "shared/stripe_checkout_button" %>
+          <%= hidden_field_tag(:product_id, @product.id) %>
       <% end %>
     </div>
   </div>
   
-<% if @product.comments.length > 0 %>
-<% end %> 
 <%= render 'new_comment' %>
 <%= render 'comments' %>
 <%= will_paginate @comments %>
 </div>
+
   

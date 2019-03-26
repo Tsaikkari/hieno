@@ -57,7 +57,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   text-shadow: #000 1px 1px;
   padding: 7px;
@@ -84,12 +84,13 @@ p {
 }
 
 .carousel {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #000;
 }
 
 .welcome {
   text-align: right;
+  color: chocolate; 
 }
 
 .about-header { 
@@ -180,7 +181,7 @@ ul, li, a {
   background-color: #FFF;
   margin: 0;
   border-top: 15px solid #1993;
-  border-bottom: 3px solid #1993;
+  border-bottom: 15px solid #1993;
 }
 
 /* contact page */
@@ -232,7 +233,7 @@ ul, li, a {
     color: #000;
 }
 .site-footer {
-  background: #EEE685;
+  background: #E3E3e3;
   text-align: center;
   padding-top: 40px;
 }
