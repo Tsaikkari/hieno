@@ -7,4 +7,9 @@ class UserMailer < ApplicationMailer
          to: 'trospe@gmx.de',
          subject: "A new contact form message from #{name}")
   end
+
+  def order_placed(user, email)
+    mail(to: user.email,
+         subject: "Order Placed")
+  end
 end
