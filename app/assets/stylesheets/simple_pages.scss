@@ -31,7 +31,6 @@ body {
 #bike {
   font-size: 50px;
   color: #FFF;
-  //text-shadow: 1px 1px gold;
   padding-bottom: 0;
   position: absolute;
 }
@@ -59,7 +58,6 @@ h1 {
 h2 {
   font-family: 'Roboto', sans-serif;
   text-align: center;
-  text-shadow: #000 1px 1px;
   padding: 7px;
   padding-bottom: 10px;
 }
@@ -164,6 +162,7 @@ ul, li, a {
 .old-new { /* h2 header */
   font-family: 'Gloria Hallelujah', cursive;
   color: orange;
+  text-shadow: 2px 2px #000;
 }
 
 #about {

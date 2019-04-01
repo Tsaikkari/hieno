@@ -22,6 +22,7 @@ class PaymentsController < ApplicationController
                 )
                 UserMailer.order_placed(@user, @product).deliver_now
             end 
+            redirect_to product_path(@product), notice: "Your payment succeeded"
 
         rescue Stripe::CardError => e 
             # The card has been declined
@@ -30,6 +31,5 @@ class PaymentsController < ApplicationController
             flash[:error] = "Unfortunately, there was an 
             error processing your payment: #{err[:message]}"
         end 
-        redirect_to product_path(@product)
     end
 end

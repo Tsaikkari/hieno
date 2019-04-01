@@ -10,6 +10,6 @@ class UserMailer < ApplicationMailer
 
   def order_placed(user, email)
     mail(to: user.email,
-         subject: "Order Placed")
+         subject: "Order placed")
   end
 end
