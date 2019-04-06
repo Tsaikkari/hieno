@@ -1,6 +1,7 @@
 class OrdersController < ApplicationController
+
   def index
-    @orders = Order.includes(:product).all
+    @orders = Order.where(user_id: current_user.id).includes(:product)
   end
 
   def show
@@ -12,16 +13,16 @@ class OrdersController < ApplicationController
 
   def create
     @order = Order.new(order_params)
-
-  respond_to do |format|
-    if @order.save
-      format.html { redirect_to "/simple_pages/landing_page", notice: 'Order was successfully created.' }
-      format.json { render :show, status: :created, location: "/simple_pages/landing_page" }
-    else
-      format.html { render :new }
-      format.json { render json: @order.errors, status: :unprocessable_entity }
+    
+    respond_to do |format|
+      if @order.save
+        format.html { redirect_to "/simple_pages/landing_page", notice: 'Order was successfully created.' }
+        format.json { render :show, status: :created, location: "/simple_pages/landing_page" }
+      else
+        format.html { render :new }
+        format.json { render json: @order.errors, status: :unprocessable_entity }
+      end
     end
-  end
   end
 
   def destroy
