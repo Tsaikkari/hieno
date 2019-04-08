@@ -2,8 +2,10 @@
   <div class="row">
     <div class="col-sm-4">
     <h3>Order Information</h3>
-    <strong>Order ID: </strong><%= @order.id %>
-    <strong>Product Name: </strong><%= @order.product.name %>
+    <strong>Order ID: </strong><%= @order.id %><br>
+    <strong>Product Name: </strong><%= @order.product.name %><br>
+    <strong>Product Price: € </strong><%= @order.product.price %><br>
+    <strong>Total Price: € </strong><%= @order.total %>
    </div>
   </div>
 </div>
