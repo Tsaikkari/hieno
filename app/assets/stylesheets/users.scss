@@ -1,7 +1,12 @@
  /* devise */
- .sign-up, .login, .forgot, .actions {
+ .sign-up, .login, .forgot, {
   text-align: center;
   padding-top: 90px;
+  margin-bottom: 30px; 
+}
+
+.actions {
+  text-align: left
 }
 
 .btn-light {

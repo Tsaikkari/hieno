@@ -94,7 +94,7 @@ p {
 .about-header { 
   font-family: 'Lato', sans-serif;
   color: #000;
-  padding-top: 20px; 
+  padding-top: 30px; 
   padding-bottom: 25px;
 }
 
@@ -162,7 +162,7 @@ ul, li, a {
 .old-new { /* h2 header */
   font-family: 'Gloria Hallelujah', cursive;
   color: orange;
-  text-shadow: 2px 2px #000;
+  text-shadow: 1px 2px #000;
 }
 
 #about {
@@ -205,11 +205,12 @@ ul, li, a {
 #contact { /* form */
   border: solid grey 1px;
   padding: 20px;
-  background-color: #1053;
+  background-color: #6E7B8B;
+  /*background-color: #1053;*/
 }
 
 .contact {
-  color: #1053;
+  color: #6E7B8B;
   padding-top: 10px;
   padding-bottom: 7px; 
   position: relative;
