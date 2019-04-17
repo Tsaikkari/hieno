@@ -1,5 +1,5 @@
  /* devise */
- .sign-up, .login, .forgot, {
+ .sign-up, .login, .forgot {
   text-align: center;
   padding-top: 90px;
   margin-bottom: 30px; 
@@ -10,12 +10,12 @@
 }
 
 .btn-light {
-  border: 1px solid lightgrey;
+  border: 1px solid #5A4E4D;
   background-color: #FFF;
 }
 
 .btn:hover {
-  background-color: #7E675E;
+  background-color: #5A4E4D;
 }
 
 .log-in {
@@ -31,6 +31,11 @@
 .div.field, .actions {
   color: #7E675E;
   padding-top: 0;
+}
+
+.form-control {
+  border: 1px solid #5A4E4D;
+  background-color: #FFF;
 }
 
 /* users page */
