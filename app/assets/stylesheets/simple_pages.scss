@@ -78,7 +78,6 @@ p {
 }
 
 .welcome, .contact {
-  /*font-family: 'Sniglet', cursive;*/
   font-family: 'Lato', sans-serif;
 }
 
@@ -114,7 +113,8 @@ nav {
   color: grey;
   
   &:visited {
-    color: #DFE166;
+    /*color: #4F6457;*/ 
+    color: #DDA288;
     text-decoration: none;
   }
 
@@ -168,9 +168,8 @@ ul, li, a {
 }
 
 .old-new { /* h2 header */
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Special Elite', cursive;
   color: orange;
-  text-shadow: 1px 2px #000;
 }
 
 #about {
@@ -195,14 +194,19 @@ ul, li, a {
 #envelope { /* icon */
   position: fixed;
   text-align: right;
-  color: #DFE166;
+  color: #DDA288;
   font-size: 3.9em;
   padding-left: 36%;
   padding-top: 1.3%;
 }
 
-#contact-info {
-  padding: 25px;
+#contact-info p {
+  font-size: 1.5em;
+  padding-top: 10px;
+}
+
+#open {
+  background-color: #8593AE;
 }
 
 .my-image {
@@ -212,12 +216,12 @@ ul, li, a {
 
 #contact { /* form */
   padding: 20px;
-  background-color: #9A9EAB;
+  background-color: #7E675E;
 }
 
 .contact {
   text-align: left;
-  color: #5D535E;
+  color: #5A4E4D;
   padding-top: 10px;
   padding-left: 10%;
   padding-bottom: 7px; 
@@ -241,7 +245,7 @@ ul, li, a {
     color: #000;
 }
 .site-footer {
-  background: #E3E3e3;
+  background: #5A4E4D;
   text-align: center;
   padding-top: 40px;
 }

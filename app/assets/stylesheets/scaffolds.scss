@@ -1,5 +1,5 @@
 body {
-  color: #D9B44A;
+  color: #DDA288;
   margin: 0px;
   padding: 0px;
   font-family: verdana, arial, helvetica, sans-serif;
@@ -25,14 +25,14 @@ a {
   text-decoration: none;
 
   &:visited {
-    color: chocolate;
+    color: #4F6457;
     text-decoration: none;
     background-color: #C1CDCD;
   }
 
   &:hover {
     color: #fff;
-    background-color: grey;
+    background-color: #8593AE;
     text-decoration: none;
   }
 }
