@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col-sm-9 offset-sm-3">
+        <hr>
+        <p>
+        <%= comment.user.first_name %>  <small><em><%= "#{time_ago_in_words(comment.created_at)} ago" %></em></small>
+        <% if signed_in? && current_user.admin? %>
+            <%= link_to ('<i class="fas fa-times"></i>').html_safe, procuct_comment_path(comment.product, comment), method: :delete, data: { confirm: 'Are you sure?' } %>
+        <% end %>
+        </p>
+        <div class="rated" data score="<%= comment.rating %>"></div>
+            <p><%= comment.body %></p>
+        </div>
