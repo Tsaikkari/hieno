@@ -17,7 +17,9 @@
   </head>
 
   <body>
+  <% cache do %>
   <div class="whole-page <%= @homepage ? 'home-page' : '' %>">
+  <% end %>
   <% if notice %>
   <p id="notice" class="alert alert-primary"><%= notice %></p>
   <% end %>
