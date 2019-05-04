@@ -2,36 +2,14 @@
 .img-fluid {
   width: auto;
   height: 300px;
-  border-bottom: solid #000 2px;
-  border-top: solid #000 2px;
 }
 
 .col-sm-4 {
   padding-right: 0;
 }
 
-#products { /* field */
-  padding-bottom: 0px;   
-}
-
-.product-block { /* img, name and description */
+#products-info { /* img, name and description */
   padding: 0;
-}
-
-.products { /* h1 header */
-  padding-top: 0px;
-  padding-bottom: 0px;
-  margin-bottom: 0;
-  font-weight: 600;
-  letter-spacing: 0.2em;
-  color: chocolate;
-}
-
-.name {
-  font-family: 'Lato-thin', sans-serif;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  margin-left: 0;
 }
 
 .text {

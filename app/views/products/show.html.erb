@@ -1,9 +1,9 @@
-
+<% cache @product do %>
   <h3 class="show-name">
       <strong></strong>
       <%= @product.name %>
   </h3>
-
+<% end %>
   <div class="row" id="show-row">
     <div class="col-sm-4 offset-sm-3">
       <%= image_tag(@product.image_url, class: "img-fluid img-zoom", data_zoom_image: "@product.product_image.url") unless @product.image_url.nil? %><br><br>

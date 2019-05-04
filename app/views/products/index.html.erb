@@ -1,17 +1,11 @@
+
 <h1 class="products"></h1>
   <div class="row" id="products-row">
-    <% @products.each do |product| %>
-    <div class="col-sm-4" id="products">
-      <div class="product-block">
-       <%= image_tag(product.image_url, class: "img-fluid") unless product.image_url.nil? %><br>
-        <div class="text-block">
-          <h3 class="name"><%= link_to product.name, product %></h3>
-            <p class="text"><%= product.description %></p>
-            <p class="text"><%= product.colour %></p>
-            <p class="text">€ <%= product.price %></p>
-        </div>
-      </div><br><br>
-    </div>
-  <% end %>
+    
+      <% cache(cache_key_for_products) do %>
+      <%= render @products %>
+     
+    <% end %>
   </div>
+ 
 
