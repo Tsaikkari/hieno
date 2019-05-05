@@ -21,7 +21,7 @@ class OrdersController < ApplicationController
     respond_to do |format|
       if @order.save
         format.html { redirect_to "/simple_pages/landing_page", notice: 'Order was successfully created.' }
-        format.json { render :show, status: :created, location: "/simple_pages/landing_page" }
+        format.json { render :show, status: :created, location: "/simple_pages/about_page" }
       else
         format.html { render :new }
         format.json { render json: @order.errors, status: :unprocessable_entity }

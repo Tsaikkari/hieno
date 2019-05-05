@@ -4,13 +4,15 @@ window.onload = function() {
   var t = setInterval(move, 3);
   
   function move() {
-    if (pos >= 937) {
-      clearInterval(t)
-    }
-  
-    else {
-      pos += 1;
-      bike.style.left = pos + "px";
+    if (bike) {
+      if (pos >= screen.width * 0.65) {
+        clearInterval(t)
+      }
+    
+      else {
+        pos += 1;
+        bike.style.left = pos + "px";
+      }
     }
   }
   };

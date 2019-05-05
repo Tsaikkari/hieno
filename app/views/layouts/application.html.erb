@@ -27,7 +27,7 @@
   <p id="alert" class="alert alert-primary"><%= alert %></p>
   <% end %>
     <nav class="navbar navbar-expand-md navbar-dark" role="navigation" id="navbar">
-      <li id="company"><%= link_to "Berlin Bike", root_path, class: "company" %></li>
+     <%= link_to "Berlin Bike", root_path, class: "company", id: "company" %>
      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"></span>
      </button>
@@ -43,8 +43,6 @@
           <%= link_to('Login', new_user_session_path) %>
         </li>
         <% end %>
-         <li class="nav-item">
-           <li><%= link_to "Home", simple_pages_landing_page_path %></li>
          <li class="nav-item"></li>
            <li><%= link_to "About", simple_pages_about_path %></li>
          <li class="nav-item"></li>
@@ -56,7 +54,7 @@
        </ul>
 
         <%= form_with(url: products_path, method: 'get', local: true, class: "form-inline") do |form| %>
-        <%= form.text_field :q, id: 'q', value: params[:q], class: "form-control mr-sm-2" %>
+        <%= form.text_field :q, id: 'q', value: params[:q], class: "form-control mr-sm-auto" %>
         <%= form.submit 'Search', class: 'btn btn-default' %>
         <% end %>
       </div>
