@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
-  before_action :redirect_user, only: [:edit, :destroy]
+  before_action :redirect_user, only: [:destroy]
   before_action :authenticate_user!
   load_and_authorize_resource
   protect_from_forgery
@@ -22,6 +22,9 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+    if signed_in?
+      @user = current_user 
+    end
   end
 
   # GET /users/new

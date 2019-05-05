@@ -1,11 +1,7 @@
-
-<h1 class="products"></h1>
-  <div class="row" id="products-row">
-    
-      <% cache(cache_key_for_products) do %>
-      <%= render @products %>
-     
-    <% end %>
-  </div>
+<div class="row" id="products-row">
+  <% cache(cache_key_for_products) do %>
+    <%= render @products %>
+  <% end %>
+</div>
  
 
