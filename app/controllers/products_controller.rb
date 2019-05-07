@@ -13,7 +13,7 @@ class ProductsController < ApplicationController
   end
 
   def popular_products(id, rating)
-    $redis.hmset("product_#{self.id}_rating>AVG_rating.products.all", product.id)
+    $redis.hmset("product_#{self.id}_AVG_rating>AVG_rating.products.all", product.id)
   end
 
   # GET /products/1
