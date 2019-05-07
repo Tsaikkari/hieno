@@ -12,6 +12,10 @@ class ProductsController < ApplicationController
     end
   end
 
+  def popular_products(id, rating)
+    $redis.hmset("product_#{self.id}_rating>AVG_rating", product.id)
+  end
+
   # GET /products/1
   # GET /products/1.json
   def show

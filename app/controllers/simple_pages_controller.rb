@@ -4,10 +4,6 @@ class SimplePagesController < ApplicationController
     @homepage = true
   end
 
-  def landing_page
-    @products = Product.limit(6)
-  end
-
   def thank_you
     @name = params[:name]
     @email = params[:email]

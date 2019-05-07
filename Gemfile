@@ -32,6 +32,10 @@ gem 'rails-controller-testing'
 gem 'stripe'
 
 gem 'dalli'
+
+gem 'redis-rails'
+
+gem 'redis'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
