@@ -12,8 +12,11 @@ class ProductsController < ApplicationController
     end
   end
 
-  def popular_products(id, rating)
-    $redis.hmset("product_#{self.id}_AVG_rating>AVG_rating.products.all", product.id)
+  def popular_products
+    if AVG_rating > AVG_rating.products.all
+    $redis.hmset("product_#{self.id}_AVG_rating", product.id, product.image_url)
+    $redis.hmget("product_#{self.id}_AVG_rating", product.id, product.image_url)
+    end
   end
 
   # GET /products/1
@@ -42,8 +45,8 @@ class ProductsController < ApplicationController
 
     respond_to do |format|
       if @product.save
-        format.html { redirect_to "/simple_pages/landing_page", notice: 'Product was successfully created.' }
-        format.json { render :show, status: :created, location: "/simple_pages/landing_page" }
+        format.html { redirect_to "/simple_pages/about", notice: 'Product was successfully created.' }
+        format.json { render :show, status: :created, location: "/simple_pages/about" }
       else
         format.html { render :new }
         format.json { render json: @product.errors, status: :unprocessable_entity }
