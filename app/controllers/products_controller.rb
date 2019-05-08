@@ -13,10 +13,11 @@ class ProductsController < ApplicationController
   end
 
   def popular_products
-    if AVG_rating > AVG_rating.products.all
-    $redis.hmset("product_#{self.id}_AVG_rating", product.id, product.image_url)
-    $redis.hmget("product_#{self.id}_AVG_rating", product.id, product.image_url)
-    end
+    @popular_product = Product.popular_products
+      if average_rating > average_rating.products.all
+      $redis.hmset("product_#{self.id}_average_rating", product.id, product.image_url)
+      $redis.hmget("product_#{self.id}_average_rating", product.id, product.image_url)
+      end
   end
 
   # GET /products/1

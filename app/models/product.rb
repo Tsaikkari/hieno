@@ -19,6 +19,10 @@ class Product < ApplicationRecord
     comments.average(:rating).to_f
   end
 
+  def popular_product
+    comments.average(:rating) > comments.average(:rating).products.all
+  end
+
   def self.search(search_term)
     if Rails.env.production?
       Product.where("name ilike ?", "%#{search_term}%")
