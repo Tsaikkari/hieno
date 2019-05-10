@@ -4,27 +4,28 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
+    
     if params[:q]
       search_term = params[:q]
       @products = Product.search(search_term)
     else
       @products = Product.created_desc.all
-    end
+    end 
   end
 
   def popular_products
-    @popular_products = Product.popular_products
-    @popular_product.first = Product.popular_products.highest_rating
-      if average_rating > average_rating.products.all
+    if product.average_rating > average_rating.products.all
+      @product = @popular_product
         $redis.hmset(product.average_rating, product.id, product.image_url)
         $redis.hmget(product.average_rating, product.id, product.image_url)
-      end
+    end
   end
 
   # GET /products/1
   # GET /products/1.json
   def show
     @comments = @product.comments.order("created_at DESC").paginate(:page => params[:page], :per_page => 2)
+    @popular_product.first = Product.where(comments.rating_desc.first)
   end
 
   # GET /products/new

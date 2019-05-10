@@ -20,7 +20,7 @@ class Product < ApplicationRecord
   end
 
   def popular_product
-    comments.average(:rating) > comments.average(:rating).products.all
+    Product.where(comments.average(:rating) > comments.average(:rating).products.all)
   end
 
   def self.search(search_term)
