@@ -6,7 +6,7 @@
   </ol>
   <div class="carousel-inner">
     <% @products.each do |product| %>
-    <div class="carousel-item<%= " active" if product == @popular_product %>">
+    <div class="carousel-item<%= " active" if @popular_product == @first %>">
       <%= image_tag(product.image_url) %>
 
       <div class="carousel-caption d-none d-md-block">

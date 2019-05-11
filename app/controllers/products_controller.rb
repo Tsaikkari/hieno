@@ -25,7 +25,7 @@ class ProductsController < ApplicationController
   # GET /products/1.json
   def show
     @comments = @product.comments.order("created_at DESC").paginate(:page => params[:page], :per_page => 2)
-    @popular_product.first = Product.where(comments.rating_desc.first)
+    @first = @highest_rating_product
   end
 
   # GET /products/new
