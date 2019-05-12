@@ -36,8 +36,13 @@
   </div>
   
 <%= render 'new_comment' %>
+<div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
 <%= render 'comments' %>
-<%= will_paginate @comments %>
+<div class="row">
+  <div class="col-sm-4 offset-sm-3">
+    <%= will_paginate @comments %>
+  </div>
 </div>
+
 
   
