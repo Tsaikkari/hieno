@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-  mount ActionCable.server => '/cable'
   devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout' }
   resources :users
   resources :products do
@@ -13,4 +12,5 @@ Rails.application.routes.draw do
   get 'simple_pages/contact'
   post 'simple_pages/thank_you'
   post 'payments/create'
+  mount ActionCable.server => '/cable'
 end
