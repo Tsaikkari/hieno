@@ -4,13 +4,15 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    
     if params[:q]
       search_term = params[:q]
       @products = Product.search(search_term)
     else
       @products = Product.created_desc.all
     end 
+    if @product = @popular_product
+      @popular_product = Product.limit(3)
+    end
   end
 
   def popular_products
