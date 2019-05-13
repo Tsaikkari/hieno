@@ -10,9 +10,7 @@ class ProductsController < ApplicationController
     else
       @products = Product.created_desc.all
     end 
-    if @product = @popular_product
-      @popular_product = Product.limit(3)
-    end
+      @popular_product = Product.joins(:comments).group('products.id').first(3)
   end
 
   def popular_products
