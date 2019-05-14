@@ -19,12 +19,12 @@ class Product < ApplicationRecord
     comments.average(:rating).to_f
   end
 
-  def highest_rating_product
-    products.rating_desc.first
-  end
+  #def highest_rating_product
+  #  products.rating_desc.first
+  #end
 
   def popular_product
-    Product.where(comments.average(:rating) > comments.average(:rating).products.all)
+    products.where(comments.average(:rating) > comments.average(:rating).products.all)
   end
 
   def self.search(search_term)
