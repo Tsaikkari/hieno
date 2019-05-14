@@ -9,13 +9,13 @@ class ProductsController < ApplicationController
       @products = Product.search(search_term)
     else
       @products = Product.created_desc.all
-      @popular_products = Product.joins(:comments).group('products.id').first(3)
+      @popular_product = Product.joins(:comments).group('products.id').first(3)
     end 
   end
 
-  def popular_products
-    if product.average_rating > average_rating.products.all
-      @products = @popular_products
+  def popular_product
+    if product.average_rating = 5
+      @product = @popular_product
         #$redis.hmset(product.average_rating, product.id, product.image_url)
         #$redis.hmget(product.average_rating, product.id, product.image_url)
     end
@@ -25,7 +25,7 @@ class ProductsController < ApplicationController
   # GET /products/1.json
   def show
     @comments = @product.comments.order("created_at DESC").paginate(:page => params[:page], :per_page => 2)
-    @popular_product = Product.limit(3)
+    #@popular_product = Product.limit(3)
     #@popular_product = Product.joins(:comments).group('products.id')
   end
 
