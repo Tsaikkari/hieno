@@ -23,9 +23,9 @@ class Product < ApplicationRecord
   #  products.rating_desc.first
   #end
 
-  def popular_product
-    products.where(comments.average(:rating) > comments.average(:rating).products.all)
-  end
+  #def popular_product
+    #products.where(comments.average(:rating) > comments.average(:rating).products.all)
+  #end
 
   def self.search(search_term)
     if Rails.env.production?
