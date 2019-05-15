@@ -13,8 +13,6 @@ App.product = App.cable.subscriptions.create("ProductChannel", {
     $(".alert.alert-info").show();
     $('.product-reviews').prepend(data.comment);
     $("#average-rating").attr('data-score', data.average_rating);
-    initRating();
-    initRated();
     //Called when there's incoming data on the websocket for this channel
   },
   listen_to_comments: function() {
