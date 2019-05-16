@@ -1,3 +1,10 @@
+
+<div class="row" id="products-row">
+  <% cache(cache_key_for_products) do %>
+    <%= render @products %>
+  <% end %>
+</div>
+
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -5,7 +12,7 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
   <div class="carousel-inner">
-    <% @popular_product.each do |product| %>
+    <% @products.each do |product| %>
     <div class="carousel-item<%= " active" if product == @popular_product.first %>">
       <%= image_tag(product.image_url) %>
 
@@ -23,12 +30,6 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div>
-
-<div class="row" id="products-row">
-  <% cache(cache_key_for_products) do %>
-    <%= render @products %>
-  <% end %>
 </div>
  
 

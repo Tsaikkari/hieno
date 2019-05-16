@@ -1,18 +1,24 @@
 
+.carousel-item {
+  margin-left: 0%;
+  padding-left: 0;
+}
+
 .carousel-inner {
   height: 300px;
-  width: 100%;
+  width: auto;
 }
 
 .img-fluid {
   height: 300px;
 }
 
-.col-sm-4 {
+#products-info { /* img, name and description */
+  padding: 0;
   padding-right: 0;
 }
 
-#products-info { /* img, name and description */
+#products-row {
   padding: 0;
 }
 
