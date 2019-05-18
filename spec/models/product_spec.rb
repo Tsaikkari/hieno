@@ -22,5 +22,17 @@ describe Product do
     it "is valid with a description" do
       expect(Product.new(name: "race bike", description: "Great bike!", image_url: "racebike.jpg", colour: "blue", price: "50")).to be_valid
     end
+
+    it "is not valid without an image_url" do
+      expect(Product.new(name: "race bike", description: "Great bike!", colour: "blue", price: "50")).not_to be_valid
+    end
+
+    it "is valid with a colour" do
+      expect(Product.new(name: "race bike", description: "Great bike!", image_url: "racebike.jpg", colour: "blue", price: "50")).to be_valid
+    end 
+
+    it "is not valid without a price" do 
+      expect(Product.new(name: "race bike", description: "Great bike!", image_url: "racebike.jpg", colour: "blue")).not_to be_valid
+    end
   end
 end

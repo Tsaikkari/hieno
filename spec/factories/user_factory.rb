@@ -11,7 +11,8 @@ FactoryBot.define do
     factory :admin, class: User do
         email 
         password { "13691215" }
-        first_name { "Anna" }
-        last_name { "Meer" }
+        first_name { "AdminFirstName" }
+        last_name { "AdminLastName" }
+        admin true
     end
 end
