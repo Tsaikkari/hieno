@@ -13,15 +13,9 @@ class ProductsController < ApplicationController
     end 
   end
 
-  def popular_product
-    @popular_product = Product.joins(:comments).where('comments.rating > ?', 4)
-    #if product.comments.rating > 4
-     # @product = @popular_product
-
       #$redis.hmset(product.average_rating, product.id, product.image_url)
       #$redis.hmget(product.average_rating, product.id, product.image_url)
-    #end 
-  end
+    
 
   # GET /products/1
   # GET /products/1.json

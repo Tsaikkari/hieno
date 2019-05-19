@@ -12,8 +12,8 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
   <div class="carousel-inner">
-    <% @products.each do |product| %>
-    <div class="carousel-item<%= " active" if product == @popular_product.first %>">
+    <% @popular_product.each do |product| %>
+    <div class="carousel-item<%= " active" %>">
       <%= image_tag(product.image_url) %>
 
       <div class="carousel-caption d-none d-md-block">

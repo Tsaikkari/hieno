@@ -23,10 +23,6 @@ class Product < ApplicationRecord
   #  products.rating_desc.first
   #end
 
-  def popular_product
-    Product.popular_product.joins(:comments).where('comments.rating > ?', 4)
-  end
-
   def self.search(search_term)
     if Rails.env.production?
       Product.where("name ilike ?", "%#{search_term}%")
