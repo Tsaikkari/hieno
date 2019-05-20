@@ -14,7 +14,7 @@ describe ProductsController, type: :controller do
 
         it 'assigns @products' do
             get :index
-            expect(assigns(:products)).to eq example_product 
+            expect(assigns(:products).first).to eq example_product 
         end 
     end
 
@@ -112,7 +112,7 @@ describe ProductsController, type: :controller do
 
             context 'with valid attributes' do 
                 it 'should save the new product in the database' do 
-                    expect { post :create, params: { product: { name: "Product" }}}.to change(Product, :count).by(1) 
+                    expect { post :create, params: { product: { name: "Product", description: "Text", image_url: "image.jpg", colour: "Black", price: "50" }}}.to change(Product, :count).by(1) 
                 end 
             end 
 
