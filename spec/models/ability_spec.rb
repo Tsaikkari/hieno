@@ -1,4 +1,4 @@
-require 'Rails-helper'
+require 'rails_helper'
 
 describe Ability do
     
