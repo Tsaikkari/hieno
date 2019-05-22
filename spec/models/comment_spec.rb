@@ -10,15 +10,15 @@ describe Comment do
         end
         
         it "is not valid without a product" do
-            expect(Comment.new(body: "comment", user: user,  rating: 5)).not_to be_valid
+            expect(build(:comment, product:nil)).not_to be_valid
         end
         
         it "is not valid without a user" do
-            expect(Comment.new(body: "comment", product: product, rating: 5)).not_to be_valid
+            expect(build(:comment, user:nil)).not_to be_valid
         end
         
         it "is not valid without a rating" do
-            expect(Comment.new(body: "comment", user: user, product: product)).not_to be_valid
+            expect(build(:comment, rating: '')).not_to be_valid
         end
         
         it "is not valid with rating being a float" do

@@ -7,6 +7,7 @@ abort("The Rails environment is running in production mode!") if Rails.env.produ
 require 'rspec/rails'
 # note: require 'devise' after require 'rspec/rails'
 require 'devise'
+require 'support/factory_bot'
 
 RSpec.configure do |config|
   # For Devise > 4.1.1
