@@ -25,11 +25,7 @@ class ProductsController < ApplicationController
 
   # GET /products/new
   def new
-    if signed_in? && current_user.admin? 
-      @product = Product.new
-    else
-      redirect_to root_path 
-    end
+    @product = Product.new
   end
 
   # GET /products/1/edit
