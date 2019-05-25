@@ -11,7 +11,7 @@ class ProductsController < ApplicationController
       @products = Product.search(search_term)
     else
       @products = Product.created_desc.all
-      @popular_product = Product.joins(:comments).where('comments.rating > ?', 4)
+      #@popular_product = Product.joins(:comments).where('comments.rating > ?', 4)
     end 
   end
 
