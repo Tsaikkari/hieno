@@ -1,9 +1,11 @@
 class ProductsController < ApplicationController
+  load_and_authorize_resource 
   before_action :set_product, only: [:show, :edit, :update, :destroy]
- 
+  
   # GET /products
   # GET /products.json
   def index
+
     if params[:q]
       search_term = params[:q]
       @products = Product.search(search_term)
