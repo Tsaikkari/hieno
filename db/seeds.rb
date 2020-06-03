@@ -29,14 +29,14 @@ products = Product.create(
             price: '90 €' 
         }, 
         { 
-            name: "Girl/'s Bike", 
+            name: "Girl's Bike", 
             description: 'Cute Bike', 
             image_url: 'citybike.jpg', 
             colour: 'Pink', 
             price: '50 €' 
         }, 
         { 
-            name: "Women/'s Bike", 
+            name: "Women's Bike", 
             description: 'Nice Bike', 
             image_url: 'mybike.jpg', 
             colour: 'Black', 
@@ -57,7 +57,7 @@ products = Product.create(
             price: '80 €' 
         }, 
         { 
-            name: "Grandma/'s Bike", 
+            name: "Grandma's Bike", 
             description: 'Beautiful', 
             image_url: 'grandmasbike2.jpg', 
             colour: 'Red', 
