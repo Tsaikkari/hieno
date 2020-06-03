@@ -5,37 +5,24 @@
   margin-bottom: 30px; 
 }
 
+@media screen and (max-width: 375px) {
+  .sign-up, .login, .forgot {
+    padding-top: 40px;
+    font-size: 1.2rem;;
+  }
+}
+
 .actions {
   text-align: left
 }
 
-.btn-light {
-  border: 1px solid #5A4E4D;
-  background-color: #FFF;
-}
-
-.btn:hover {
-  background-color: #5A4E4D;
-}
-
-.log-in {
-  padding-left: 60%;
-  padding-right: 55%;
-}
-
 #remember {
   color: #7E675E;
-  padding-left: 8%;
 }
 
 .div.field, .actions {
   color: #7E675E;
   padding-top: 0;
-}
-
-.form-control {
-  border: 1px solid #5A4E4D;
-  background-color: #FFF;
 }
 
 /* users page */

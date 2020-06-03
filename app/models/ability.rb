@@ -10,9 +10,6 @@ class Ability
     can :manage, User, id: user.id
     can :manage, Comment, user_id: user.id
     end
-    if user.admin? # additional permissions for administrators
-    can :manage, :all
-    end
   end
 end
 
