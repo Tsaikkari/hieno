@@ -1,13 +1,14 @@
 <% cache @product do %>
-  <h3 class="show-name">
-      <strong></strong>
-      <%= @product.name %>
-  </h3>
-<% end %>
-  <div class="row" data-product-id="<%= @product.id %>">
+  <div class="row product-show" data-product-id="<%= @product.id %>">
     <div class="col-sm-4 offset-sm-3 show-col">
       <div class="card">
-        <%= image_tag(@product.image_url, class: "img-fluid img-zoom", data_zoom_image: "@product.product_image.url") unless @product.image_url.nil? %><br><br>
+        <%= image_tag(@product.image_url, class: "img-fluid img-zoom", data_zoom_image: "@product.product_image.url") unless @product.image_url.nil? %>
+        <% end %>
+        <div class="card-header">
+          <h3 class="show-name">
+            <%= @product.name %>
+          </h3>
+        </div>
         <div class="show-buttons">
         <%= link_to "Back", :back, class: "btn btn-light" %>
         </div>
