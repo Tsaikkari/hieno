@@ -225,15 +225,28 @@ ul, li, a {
   margin-top: 1.2rem;
 }
 
+@media screen and (max-width: 320px) {
+
+}
+
 @media (max-width: 600px) {
-  .about.row {
-    width: 100vw !important;
+  a#company {
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .about-header {
+    padding-left: 0;
+  }
+  .old-new {
+    padding-left: 0;
   }
   .about-text {
     text-align: justify;
   }
   .dom {
-    padding-right: 4.5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding-right: 6rem;
   }
 }
 

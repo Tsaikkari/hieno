@@ -1,9 +1,3 @@
-@media all {
-  img {
-    display: responsive;
-  }
-}
-
 .btn-primary {
   color: #15414a;
 }
@@ -58,4 +52,12 @@
   border-bottom: #DDA288 5px solid; 
   text-align: left;
 }
+
+@media all {
+  img {
+    display: responsive;
+  }
+}
+
+
 
