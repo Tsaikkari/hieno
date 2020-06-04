@@ -13,8 +13,8 @@ body {
 }
 
 .page-wrap {
-  margin-right: 3%;
-  margin-left: 3%;
+  margin-right: 2%;
+  margin-left: 2%;
 }
 
 /* root */
@@ -79,7 +79,7 @@ p {
 .welcome-header {
   color: #FFF;
   text-align: left;
-  padding-top: 3%;
+  padding-top: 5%;
   padding-left: 0;
 }
 
@@ -90,18 +90,6 @@ p {
 .welcome {
   text-align: right;
   color: chocolate; 
-}
-
-@media screen and (max-width: 375px) {
-  .welcome-header {
-    font-size: 2rem;
-    padding-bottom: 15%;
-    padding-top: 42%;
-    text-align: left;
-  }
-  .welcome {
-    text-align: left;
-  }
 }
 
 .about-header { 
@@ -225,19 +213,28 @@ ul, li, a {
   margin-top: 1.2rem;
 }
 
-@media screen and (max-width: 320px) {
-
-}
-
+/* mobile screen */
 @media (max-width: 600px) {
-  a#company {
+  .navbar {
+    padding-left: 0.2rem;
+  }
+  .front-page {
+    padding-left: 0.3rem;
+  }
+  .welcome-header {
+    font-size: 2rem;
+    padding-top: 42%;
+  }
+  .welcome {
     padding-left: 0;
-    margin-left: 0;
+    text-align: left;
   }
   .about-header {
+    font-size: 2rem;
     padding-left: 0;
   }
   .old-new {
+    font-size: 1.5rem;
     padding-left: 0;
   }
   .about-text {
